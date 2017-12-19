@@ -1,0 +1,23 @@
+21:48:04 **** Incremental Build of configuration Debug for project mojSTM2 ****
+make all 
+Building file: ../Src/main.cpp
+Invoking: MCU G++ Compiler
+F:\programowanie\_STM32_cpp\stacja4\mojSTM2\Debug
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F407xx -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Inc" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/system" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/lwip" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/lwip/apps" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/lwip/priv" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/lwip/prot" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/netif" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/netif/ppp" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/netif/ppp/polarssl" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/posix" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/src/include/posix/sys" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Middlewares/Third_Party/LwIP/system/arch" -I"F:/programowanie/_STM32_cpp/stacja4/mojSTM2/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.cpp"
+Finished building: ../Src/main.cpp
+ 
+Building target: mojSTM2.elf
+Invoking: MCU G++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -o "mojSTM2.elf" @"objects.list"   -lm
+Finished building target: mojSTM2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "mojSTM2.elf" "mojSTM2.bin"
+arm-none-eabi-size "mojSTM2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32576	    124	  28348	  61048	   ee78	mojSTM2.elf
+ 
+
+21:48:07 Build Finished (took 2s.578ms)
+

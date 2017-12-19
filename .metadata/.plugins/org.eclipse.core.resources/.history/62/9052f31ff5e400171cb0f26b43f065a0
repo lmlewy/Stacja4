@@ -1,0 +1,17 @@
+/*
+ * Leds.h
+ *
+ *  Created on: 19.12.2017
+ *      Author: m
+ */
+
+#ifndef LEDS_H_
+#define LEDS_H_
+
+class Leds {
+public:
+	Leds();
+	virtual ~Leds();
+};
+
+#endif /* LEDS_H_ */

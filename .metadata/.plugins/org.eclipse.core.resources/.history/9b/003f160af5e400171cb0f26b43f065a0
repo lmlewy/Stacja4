@@ -1,0 +1,18 @@
+/*
+ * Leds.cpp
+ *
+ *  Created on: 19.12.2017
+ *      Author: m
+ */
+
+#include "Leds.h"
+
+Leds::Leds() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Leds::~Leds() {
+	// TODO Auto-generated destructor stub
+}
+
